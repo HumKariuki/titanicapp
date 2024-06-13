@@ -11,14 +11,14 @@ import numpy as np
 from PIL import Image
 
 # Load the model
-titanic_model = pickle.load(open(r"C:\Users\LENOVO\OneDrive\Desktop\ML\titanic.sav", 'rb'))
+titanic_model = pickle.load(open("titanic.sav", 'rb'))
 
 # Set up the web app
 st.set_page_config(page_title="Titanic Survival Prediction", page_icon="🚢")
 
 # Title and Image
 st.title("Titanic Survival Prediction 🚢")
-image = Image.open(r"C:\Users\LENOVO\OneDrive\Desktop\ML\titanic.jpg")
+image = Image.open("titanic.jpg")
 st.image(image, caption='RMS Titanic', use_column_width=True)
 
 # Sidebar for user input
